@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<script>
+var a = prompt('Введите фамилию: ')
+aList = a.split('')
+var len=aList.length
+var len2=len/2
+var rez=0
+var i=0
+while (i<len2){
+	if (aList[i]==aList[len-1-i]){
+		rez=rez+1
+		i=i+1
+	} else {
+		i=i+1
+	}
+}
+alert(rez)
+if (rez==len2){
+	alert("Палиндром")
+} else {
+	alert("Не палиндром")
+}
+</script>
+</html>
